@@ -39,7 +39,7 @@ mount() {
 plex () {
   sudo apt-get update
   sudo apt-get upgrade
-  wget https://downloads.plex.tv/plex-media-server-new/1.20.1.3252-a78fef9a9/debian/plexmediaserver_1.20.1.3252-a78fef9a9_amd64.deb
+  wget https://downloads.plex.tv/plex-media-server-new/1.23.3.4707-ebb5fe9f3/debian/plexmediaserver_1.23.3.4707-ebb5fe9f3_amd64.deb
   sudo dpkg -i plexmediaserver*.deb
   sudo systemctl enable plexmediaserver.service
   sudo systemctl start plexmediaserver.service
@@ -50,7 +50,7 @@ plex () {
 emby() {
   sudo apt-get update
   sudo apt-get upgrade
-  wget https://github.com/MediaBrowser/Emby.Releases/releases/download/4.5.0.50/emby-server-deb_4.5.0.50_amd64.deb
+  wget https://github.com/MediaBrowser/Emby.Releases/releases/download/4.6.3.0/emby-server-deb_4.6.3.0_amd64.deb
   sudo dpkg -i emby-server-*.deb
   sudo service emby-server start
   echo "${BLUE}Emby has been Installed succesfully${NORMAL}"
